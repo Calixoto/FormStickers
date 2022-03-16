@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BsBoxSeam } from "react-icons/bs";
 import { HiMinus, HiPlus } from "react-icons/hi";
 import { CheckoutItems } from "../CheckoutItems";
@@ -147,7 +147,7 @@ export function Form() {
                 <button type="button" onClick={() => handleDecreaseAmount()}>
                   <HiMinus style={{ fontSize: "32px" }} />
                 </button>
-                <input type="text" value={amount} />
+                <input type="text" value={amount} disabled={true} />
                 <button type="button" onClick={() => handleIncreaseAmount()}>
                   <HiPlus
                     style={{
